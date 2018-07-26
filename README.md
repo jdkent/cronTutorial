@@ -19,4 +19,10 @@ You can do this by setting your `EDITOR` environment variable in your `.bash_pro
 You would do this by opening your `.bash_profile` (e.g. `nano ~/.bash_profile`) and typing `export EDITOR="nano"` at the bottom of the file.
 
 For added information, you can set a `MAILTO` variable at the top of your crontab, so cron will email you the output of the job script. (e.g. `MAILTO=james-kent@uiowa.edu`).
-With the email, you can keep track of whether the cron job was successful or not (however, probably not very informative if the job is running every minute)
+With the email, you can keep track of whether the cron job was successful or not (however, probably not very informative if the job is running every minute).
+
+In the end your crontab would look something like this:
+```
+MAILTO=james-kent@uiowa.edu
+* * * * * /Users/jdkent/cronTutorial/cron_rsync.sh
+```
