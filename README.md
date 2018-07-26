@@ -16,6 +16,6 @@ _Note_: In order to change your default text editor to something more simple (an
 You can do this by setting your `EDITOR` environment variable in your `.bashrc`.
 You would do this by opening your `.bashrc` (e.g. `nano ~/.bashrc`) and typing `export EDITOR="nano"` at the bottom of the file.
 
-
 `* * * * * /Users/jdkent/cronTutorial/cron_rsync.sh`
 
+For added information, you can set a `MAILTO` variable at the top of your crontab, so cron will email you the output of the job script. (e.g. `MAILTO=james-kent@uiowa.edu`)
