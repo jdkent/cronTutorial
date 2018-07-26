@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-rsync -av --delete $(pwd)/dirA/ $(pwd)/dirB/
+rsync -av --delete ${HOME}/cronTutorial/dirA/ ${HOME}/cronTutorial/dirB/

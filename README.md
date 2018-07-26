@@ -9,5 +9,13 @@ Additionally, sometimes people write in dirB when they shouldn't, so we want to 
 Luckily, you've heard about cron and how it can automate your job for you, so you decide to take a stab at it.
 
 ### example crontab entry
+In order to make a cron job, you must type `crontab -e` in the terminal.
+This will open your crontab with your default text editor (most likely vim).
 
-* * * * * /home/jdkent/cronTutorial/cron_rsync.sh
+_Note_: In order to change your default text editor to something more simple (and less scary), use nano instead.
+You can do this by setting your `EDITOR` environment variable in your `.bashrc`.
+You would do this by opening your `.bashrc` (e.g. `nano ~/.bashrc`) and typing `export EDITOR="nano"` at the bottom of the file.
+
+
+`* * * * * /Users/jdkent/cronTutorial/cron_rsync.sh`
+
